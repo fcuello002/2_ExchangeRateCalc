@@ -5,7 +5,6 @@ const amountTwo = document.getElementById("amount-two");
 const rate = document.getElementById("rate");
 const swap = document.getElementById("swap");
 
-//Fetch Exchange Rates & Update DOM
 const calculate = () => {
   const firstCurrency = currencyOne.value;
   const secondCurrency = currencyTwo.value;
@@ -27,7 +26,6 @@ const swapCurrencies = () => {
   calculate();
 }
 
-//Event Listeners
 currencyOne.addEventListener("change", calculate);
 amountOne.addEventListener("input", calculate);
 currencyTwo.addEventListener("change", calculate);
